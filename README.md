@@ -21,6 +21,8 @@ If you need phpmyadmin for your fivem server
 
 i got a installer to https://github.com/Squex0978/phpmyadmininstaller
 
+if you want to upgrade or get a other version : https://github.com/Squex0978/txadminupater
+
 
 
 
