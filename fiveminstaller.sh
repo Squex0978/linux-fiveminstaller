@@ -26,7 +26,7 @@ cd /home/FiveM/server/
 echo 'Runterladen der run.sh'
 
 # Installation von Screen
-echo 'Installieren vom Screen'
+
 apt install screen
 
 
