@@ -22,8 +22,7 @@ rm -r fx.tar.xz
 
 # Herunterladen und AusfÃ¼hren der start.sh-Datei
 cd /home/FiveM/server/
-echo 'Runterladen der start.sh'
-chmod +x run.sh
+echo 'Runterladen der run.sh'
 
 # Installation von Screen
 echo 'Installieren vom Screen'
