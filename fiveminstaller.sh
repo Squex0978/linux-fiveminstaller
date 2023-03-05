@@ -16,7 +16,6 @@ cd /home/FiveM/server
 # Herunterladen und Entpacken der FiveM-Dateien
 wget https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/6298-d2bf75ac686195d6ee08f3c1e906d3c6e36640f1/fx.tar.xz
 tar xf fx.tar.xz
-echo 'Artifacts Installiert'
 
 # Entfernen der heruntergeladenen Datei
 rm -r fx.tar.xz
