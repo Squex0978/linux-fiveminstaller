@@ -30,8 +30,6 @@ echo 'Runterladen der run.sh'
 apt install screen
 
 
-echo 'Erfolgreich installiert, Jetzt Must du in den Ordner cd /home/FiveM/server und die datei run.sh ausfÃ¼hren --> ./run.sh'
-
 cd /home/FiveM/server
 
 screen ./run.sh
