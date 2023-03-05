@@ -1,9 +1,10 @@
 #!/bin/bash
 
-echo 'FiveM LINUX AutoInstaller'
+echo 'FiveMinstaller'
 
 # Update und Upgrade des Betriebssystems
-apt update && apt upgrade
+apt update
+apt upgrade
 
 # Installation von xf und tar
 apt install xf tar
