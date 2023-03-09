@@ -6,6 +6,13 @@ bash <(curl -s https://raw.githubusercontent.com/Squex0978/linux-fiveminstaller/
 
 and run in then
 
+now go on this site press left click on your version (what you want)
+
+https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/
+
+copy link 
+and paste this if you get ask
+
 
 After you have entered and started the command you will see the console from your server
 (With the pin and the link to your TX admin)
