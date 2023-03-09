@@ -1,10 +1,9 @@
 #!/bin/bash
 
-echo 'FiveMinstaller'
+echo 'FiveM LINUX AutoInstaller'
 
 # Update und Upgrade des Betriebssystems
-apt update
-apt upgrade
+apt update && apt upgrade
 
 # Installation von xf und tar
 apt install xf tar
@@ -13,27 +12,33 @@ apt install xf tar
 mkdir -p /home/FiveM/server
 cd /home/FiveM/server
 
-# Herunterladen und Entpacken der FiveM-Dateien
-wget https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/6298-d2bf75ac686195d6ee08f3c1e906d3c6e36640f1/fx.tar.xz
+# Herunterladen der FiveM-Artifakte
+echo 'Geben Sie den Link zu den FiveM-Artifakten ein:'
+read link
+wget $link
+
+# Entpacken der FiveM-Dateien
+echo 'Entpacken der FiveM-Dateien...'
 tar xf fx.tar.xz
+echo 'Artifacts Installiert'
 
 # Entfernen der heruntergeladenen Datei
 rm -r fx.tar.xz
 
-# Herunterladen und AusfÃ¼hren der start.sh-Datei
+# Herunterladen und Ausführen der start.sh-Datei
 cd /home/FiveM/server/
-echo 'Runterladen der run.sh'
+echo 'Runterladen der start.sh...'
+wget https://raw.githubusercontent.com/citizenfx/cfx-server-data/master/run.sh
+chmod +x run.sh
 
 # Installation von Screen
-
+echo 'Installieren von Screen...'
 apt install screen
 
+echo 'Erfolgreich installiert! Jetzt müssen Sie in den Ordner cd /home/FiveM/server wechseln und die Datei run.sh ausführen --> ./run.sh'
 
 cd /home/FiveM/server
 
 screen ./run.sh
 
-echo 'Done:)'
-
-
-
+echo 'Fertig :)'
